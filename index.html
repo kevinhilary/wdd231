@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - Kevin Hilary Portfolio</title>
+    <meta name="dedication" content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
+    <meta name="author" content="Kevin Hilary">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/smaller.css">
     <script src="scripts/navigation.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img class="logo" src="images/house-door-fill.svg">
+        <img class="logo" src="images/house-door-fill.svg" alt="logo">
         <span>Kevin Hilary</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
@@ -22,7 +25,56 @@
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+    <main>
+        <h1>Home</h1>
+        <div class="home-flex">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Kevin Hilary is a motivated university student in Kenya who is currently studying web and computer
+                    programming. He is passionate about technology and enjoys learning how to build websites and
+                    applications using tools like HTML, CSS, JavaScript, and Python. Kevin is curious and determined to
+                    understand concepts deeply, often practicing by working on real projects and solving practical
+                    problems.
+                    He also values education and personal growth, always looking for ways to improve his skills and
+                    knowledge. With his dedication and interest in technology, Kevin is steadily developing the
+                    abilities
+                    needed to become a skilled programmer and create useful digital solutions in the future. 🚀</p>
+            </section>
+            <section class="student-photo-section">
+                <h2>Student Photo</h2>
+                <img src="images/studentphoto-optimized.jpg" alt="student photo" loading="lazy">
+            </section>
+        </div>
+        <section>
+            <h2 class="section3-h2">Web Certificate Courses</h2>
+            <div class="courses">
+                <a href="#">All</a>
+                <a href="#">CSE</a>
+                <a href="#">WDD</a>
+            </div>
+            <div class="courses2">
+                <a href="#">WDD 130</a>
+                <a href="#">WDD 131</a>
+                <a href="#">WDD 231</a>
+            </div>
+            <p class="totalcredits">The total credits for course lissted above is 6</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/kevin-hilary"><img src="images/linkedin.svg" alt="student-linkedin"></a>
+        <a href="https://github.com/kevinhilary"><img src="images/github.svg" alt="github"></a>
+        <a href="https://twitter.com"><img src="images/twitter-x.svg" alt="twitter"></a>
+        </div>
+        <div class="fflex1">
+            <span id="year">©</span>
+            <ul>
+                <li>Kevin Hilary</li>
+                <li>Nairobi, Kenya</li>
+            </ul>
+        </div>
+        <span id="lastmodification"></span>
+    </footer>
 </body>
+
 </html>
