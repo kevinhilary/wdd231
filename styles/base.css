@@ -38,16 +38,6 @@ header span {
     display: block;
 }
 
-.navigation ul {
-    display: flex;
-}
-
-.navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .navigation a {
     display: block;
     padding: .8rem 10px;
@@ -62,6 +52,10 @@ header span {
 }
 
 .navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     justify-content: space-evenly;
     border-bottom: 1px solid #ddd;
     padding-top: 8px;
@@ -120,8 +114,7 @@ header span {
     line-height: 1.5;
 }
 
-.section3-h2{display: block;background: black;color: white;padding: 10px;text-align: center;}
-.section3-h2{margin-top: 4rem;}
+.section3-h2{display: block;background: black;color: white;padding: 10px;text-align: center;margin-top: 4rem;}
 .courses{display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 1rem;}
 .courses a{background-color: aqua;padding: 10px;border-radius: 10px;font-weight: bold;text-decoration: none;text-align: center;color: black;}
 .courses2{display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 1rem;margin-top: 1rem;}
