@@ -1,0 +1,50 @@
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+
+/* Grouping content
+   ========================================================================== */
+main {
+  display: block;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Lists
+   ========================================================================== */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Links
+   ========================================================================== */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Add more resets as needed */
