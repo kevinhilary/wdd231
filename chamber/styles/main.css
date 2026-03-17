@@ -177,10 +177,7 @@ body.list-view .cards section {
     margin: 4px 0;
 }
 
-footer {
-    background: #ddd;
-    padding: 20px;
-}
+
 
 .footer-left p {
     margin: 3px 0;
@@ -210,8 +207,9 @@ footer {
     align-items: center;
 }
 
-footer {
+footer {background: #ddd;
     margin-top: 40px;
+    padding: 20px;
 }
 
 /* Container for buttons */
@@ -257,6 +255,8 @@ footer {
     border-radius: 8px;
     flex-shrink: 0;
 }
+.parent-div{display: flex;gap: 10px;}
+.sun{width: 50px;height: auto;margin-left: 12px;}
 
 @media screen and (max-width: 650px) {
     header span {
@@ -323,5 +323,7 @@ footer {
         text-align: center;
     }
 
-    main{padding: 10px;}
+    .padded{padding: 10px;}
+
+    
 }
