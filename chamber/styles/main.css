@@ -257,6 +257,7 @@ footer {background: #ddd;
 }
 .parent-div{display: flex;gap: 10px;}
 .sun{width: 50px;height: auto;margin-left: 12px;}
+body.list-view .business-info img{display: none;}
 
 @media screen and (max-width: 650px) {
     header span {

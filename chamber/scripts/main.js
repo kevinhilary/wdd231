@@ -20,7 +20,7 @@ async function loadMembers() {
             card.innerHTML = `<p class="name">${member.name}</p>
                 <p class="tagline">Membership Level: ${member.membership}</p>
                 <div class="business-info">
-                    <img src="images/${member.image}" alt="${member.name}">
+                    <img src="images/${member.image}" alt="${member.name}" loading="lazy">
                     <div class="contact">
                         <p><strong>ADDRESS:</strong> ${member.address}</p>
                         <p><strong>PHONE:</strong> ${member.phone}</p>
