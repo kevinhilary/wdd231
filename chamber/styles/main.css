@@ -42,9 +42,9 @@ header span {
 }
 
 .firstflex li.active {
-    color: #0077cc;
+    color: #ffffff;
     font-weight: bold;
-    border-bottom: 3px solid #0077cc;
+    border-bottom: 3px solid #ffffff;
 }
 
 .firstflex li.active img {
