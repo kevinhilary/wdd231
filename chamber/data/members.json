@@ -4,7 +4,7 @@
     "phone": "0712345678",
     "url": "https://sunnycafe.com",
     "image": "sunnycafe.jpeg",
-    "membership": 3,
+    "membership": "Gold",
     "other": "Open 7 days a week"
 },
 {
@@ -13,7 +13,7 @@
     "phone": "0723456789",
     "url": "https://bluetech.com",
     "image": "bluetech.jpeg",
-    "membership": 2,
+    "membership": "Silver",
     "other": "Specializes in IT solutions"
 },
 {
@@ -22,7 +22,7 @@
     "phone": "0734567890",
     "url": "https://greengrocery.com",
     "image": "greengrocerry.jpeg",
-    "membership": 1,
+    "membership": "Bronze",
     "other": "Organic produce only"
 },
 {
@@ -31,7 +31,7 @@
     "phone": "0745678901",
     "url": "https://rapiddelivery.com",
     "image": "rapiddelivery.jpeg",
-    "membership": 2,
+    "membership": "Gold",
     "other": "Same-day courier service"
 },
 {
@@ -40,7 +40,7 @@
     "phone": "0756789012",
     "url": "https://elegantdesigns.com",
     "image": "elegantdesigns.jpeg",
-    "membership": 3,
+    "membership": "Silver",
     "other": "Interior & graphic design studio"
 },
 {
@@ -49,7 +49,7 @@
     "phone": "0767890123",
     "url": "https://sunrisefitness.com",
     "image": "sunrisefitness.jpeg",
-    "membership": 1,
+    "membership": "Bronze",
     "other": "Fitness and wellness programs"
 },
 {
@@ -58,6 +58,6 @@
     "phone": "0778901234",
     "url": "https://happypets.com",
     "image": "happypets.jpeg",
-    "membership": 2,
+    "membership": "Gold",
     "other": "Pet care and supplies"
 }]

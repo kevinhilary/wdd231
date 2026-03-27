@@ -207,7 +207,8 @@ body.list-view .cards section {
     align-items: center;
 }
 
-footer {background: #ddd;
+footer {
+    background: #ddd;
     margin-top: 40px;
     padding: 20px;
 }
@@ -255,10 +256,101 @@ footer {background: #ddd;
     border-radius: 8px;
     flex-shrink: 0;
 }
-.parent-div{display: flex;gap: 10px;}
-.sun{width: 50px;height: auto;margin-left: 12px;}
-body.list-view .business-info img{display: none;}
 
+.parent-div {
+    display: flex;
+    gap: 10px;
+}
+
+.sun {
+    width: 50px;
+    height: auto;
+    margin-left: 12px;
+}
+
+body.list-view .business-info img {
+    display: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.home-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+.eventss,
+.weatherr {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.eventss h2,
+.weatherr h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+}
+
+.weatherr h3 {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.eventss p,
+.weatherr p {
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+#forecast {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #444;
+}
+
+#forecast li {
+    margin-bottom: 5px;
+}
+.spotlights{margin: 20px}
+.spotlights h2{margin-bottom: 15px;font-size: 1.5rem;color: #1a1a1a;}
+.spotlight-cards{display: grid;grid-template-columns: repeat(3, 1fr);gap: 20px;}
+.spotlight-card{background-color: #ffffff;padding: 15px;border-radius: 12px;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);}
+.spotlight-card img{width: 80px;height: 80px;object-fit: contain;margin-bottom: 10px;}
+.spotlight-card h3{margin: 5px 0;font-size: 1.2rem;}
+.spotlight-card p{margin:3px 0; color: #555}
 @media screen and (max-width: 650px) {
     header span {
         font-size: 12px;
@@ -324,7 +416,47 @@ body.list-view .business-info img{display: none;}
         text-align: center;
     }
 
-    .padded{padding: 10px;}
+    .padded {
+        padding: 10px;
+    }
 
-    
+    .hero img {
+        height: 300px;
+    }
+
+    .hero-text {
+        background-color: #f5f7fa;
+        position: static;
+        transform: none;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 15px auto;
+        max-width: 90%;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+        color: #1a1a1a;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        color: #444;
+    }
+
+    .cta-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .home-info {
+        grid-template-columns:1fr;
+    }
+    .spotlight-cards{grid-template-columns: 1fr;}
 }

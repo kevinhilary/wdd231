@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kericho Chamber of Commerce Directory</title>
+    <title>Kericho Chamber of Commerce Home Page</title>
     <meta name="description"
         content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
     <meta name="author" content="Kevin Hilary">
@@ -14,7 +14,7 @@
     <meta property="og:description"
         content="This is my course directory page for Web Fundamentals showing my projects and assignments.">
     <meta property="og:image" content="https://kevinhilary.github.io/wdd231/chamber/images/chamberimg-large.webp">
-    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/chamber/index.html">
     <!-- Preconnect for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,49 +56,42 @@
         </nav>
     </header>
     <main>
-        <picture class="chamberpic">
-            <source srcset="images/chamberimg-large.webp" media="(min-width: 1000px)">
-            <source srcset="images/chamberimg-medium.webp" media="(min-width: 600px)">
-            <img src="images/chamberimgsmall.webp" alt="Chamber of Commerce" loading="lazy">
+        <section class="hero">
+            <picture>
+            <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-image-medium.webp" media="(min-width: 600px)">
+            <img src="images/hero-image-small.webp" alt="Home" loading="lazy">
         </picture>
-        <h1 class="hometitle">Home</h1>
-        <div class="padded">
-            <div class="homeflex">
-                <section class="events">
-                    <h2>Events</h2>
-                </section>
-                <section class="weather">
-                    <h2>Current Weather</h2>
-                    <div class="parent-div">
-                        <div>
-                            <img class="sun" src="images/cloud-sun.svg" alt="weather">
-                        </div>
-                        <div>
-                            <p><strong>75℉</strong></p>
-                            <p>Partly Cloudy</p>
-                            <p>High: 85°</p>
-                            <p>Low: 52°</p>
-                            <p>Humidity: 34%</p>
-                            <p>Sunrise: 7:30am</p>
-                            <p>Sunset: 9:59pm</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="forecast">
-                    <h2>Weather Forecast</h2>
-                    <p>Today: <strong>90℉</strong></p>
-                    <p>Wednesday: <strong>89℉</strong></p>
-                    <p>Thursday: <strong>68℉</strong></p>
-                </section>
+        <div class="hero-text">
+            <h1>Welcome to the Chamber of Commerce</h1>
+            <p>Connecting businesses, building community, and growing opportunities.</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+        </section>
+        <section class="home-info">
+            <div class="eventss">
+                <h2>Current Events</h2>
+                <p>Join us for our upcoming business networking event this Friday!</p>
+                <p>Location: City Hall Conference Room</p>
             </div>
-            <div class="cards" id="cards-container">
+            <div class="weatherr">
+                <h2>Weather</h2>
+                <p>Temperature: <span id="temp">--</span>℃</p>
+                <p>Condition: <span id="desc">--</span></p>
+                <h3>3-Day Forecast</h3>
+                <ul id="forecast">
+                    <li>Day 1: --℃</li>
+                    <li>Day 2: --℃</li>
+                    <li>Day 3: --℃</li>
+                </ul>
+            </div>
+        </section>
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-cards" id="spotlight-cards">
 
             </div>
-            <div class="toggle-buttons">
-                <button id="grid-view">Grid View</button>
-                <button id="list-view">List View</button>
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-container">
