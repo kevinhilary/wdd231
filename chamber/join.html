@@ -59,88 +59,91 @@
     </header>
 
     <main class="join-container">
+        <div class="join1">
+            <h1>Join the Chamber of Commerce </h1>
 
-        <!-- FORM -->
-        <form method="get" action="thankyou.html">
+            <!-- FORM -->
+            <form method="get" action="thankyou.html">
 
-            <h2>Membership Application</h2>
+                <h2>Membership Application</h2>
 
-            <label>
-                First Name:
-                <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
-            </label>
+                <label>
+                    First Name:
+                    <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
+                </label>
 
-            <label>
-                Last Name:
-                <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
-            </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
+                </label>
 
-            <label>
-                Organizational Title:
-                <input type="text" name="orgtitle" title="Enter your title" autocomplete="organization-title"
-                    pattern="[A-Za-z\\-\\s]{7,}">
-            </label>
+                <label>
+                    Organizational Title:
+                    <input type="text" name="orgtitle" title="Enter your title" autocomplete="organization-title"
+                        pattern="[A-Za-z\\-\\s]{7,}">
+                </label>
 
-            <label>
-                Email:
-                <input type="email" name="email" required title="Enter your email" placeholder="example@email.com"
-                    autocomplete="email">
-            </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" required title="Enter your email" placeholder="example@email.com"
+                        autocomplete="email">
+                </label>
 
-            <label>
-                Mobile Phone:
-                <input type="tel" name="phone" required title="Enter your phone number" autocomplete="tel">
-            </label>
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" required title="Enter your phone number" autocomplete="tel">
+                </label>
 
-            <label>
-                Business Name:
-                <input type="text" name="business" required title="Enter business name" autocomplete="organization">
-            </label>
+                <label>
+                    Business Name:
+                    <input type="text" name="business" required title="Enter business name" autocomplete="organization">
+                </label>
 
-            <label>
-                Membership Level:
-                <select name="membership" required>
-                    <option value="">Select...</option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
-                </select>
-            </label>
+                <label>
+                    Membership Level:
+                    <select name="membership" required>
+                        <option value="">Select...</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
 
-            <label>
-                Business Description:
-                <textarea name="description" title="Describe your business"></textarea>
-            </label>
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
 
-            <!-- TIMESTAMP -->
-            <input type="hidden" name="timestamp" id="timestamp">
+                <!-- TIMESTAMP -->
+                <input type="hidden" name="timestamp" id="timestamp">
 
-            <input type="submit" value="Apply for Membership">
+                <input type="submit" value="Apply for Membership">
 
-        </form>
+            </form>
+        </div>
 
         <!-- MEMBERSHIP CARDS -->
-        <section class="cards">
+        <section class="cardss">
 
             <div class="card">
                 <h3>NP Membership</h3>
-                <a href="#" onclick="openModal('npModal')">View Benefits</a>
+                <a href="#" class="open-btn" data-modal="npModal">View Benefits</a>
             </div>
 
             <div class="card">
                 <h3>Bronze</h3>
-                <a href="#" onclick="openModal('bronzeModal')">View Benefits</a>
+                <a href="#" class="open-btn" data-modal="npModal">View Benefits</a>
             </div>
 
             <div class="card">
                 <h3>Silver</h3>
-                <a href="#" onclick="openModal('silverModal')">View Benefits</a>
+                <a href="#" class="open-btn"  data-modal="npModal">View Benefits</a>
             </div>
 
             <div class="card">
                 <h3>Gold</h3>
-                <a href="#" onclick="openModal('goldModal')">View Benefits</a>
+                <a href="#" class="open-btn" data-modal=""="npModal">View Benefits</a>
             </div>
 
         </section>
@@ -203,21 +206,7 @@
                 <p>© <span id="year"></span> Kericho Chamber of Commerce</p>
                 <p>Last Modification: <span id="lastModified"></span></p>
             </div>
+        </div>
     </footer>
-
-    <script>
-        // TIMESTAMP
-        document.getElementById("timestamp").value = new Date().toISOString();
-
-        function openModal(id) {
-            document.getElementById(id).style.display = "block";
-        }
-
-        function closeModal(id) {
-            document.getElementById(id).style.display = "none";
-        }
-    </script>
-
 </body>
-
 </html>

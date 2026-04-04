@@ -143,3 +143,23 @@ async function loadWeather() {
 }
 
 document.addEventListener('DOMContentLoaded', loadWeather);
+document.getElementById("timestamp").value = new Date().toISOString();
+
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+}
+document.querySelectorAll(".open-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.getElementById(btn.dataset.modal).style.display = "block";
+    });
+});
+
+document.querySelectorAll(".close-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.closest(".modal").style.display = "none";
+    });
+});
