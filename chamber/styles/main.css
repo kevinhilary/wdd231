@@ -344,13 +344,107 @@ body.list-view .business-info img {
 #forecast li {
     margin-bottom: 5px;
 }
-.spotlights{margin: 20px}
-.spotlights h2{margin-bottom: 15px;font-size: 1.5rem;color: #1a1a1a;}
-.spotlight-cards{display: grid;grid-template-columns: repeat(3, 1fr);gap: 20px;}
-.spotlight-card{background-color: #ffffff;padding: 15px;border-radius: 12px;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);}
-.spotlight-card img{width: 80px;height: 80px;object-fit: contain;margin-bottom: 10px;}
-.spotlight-card h3{margin: 5px 0;font-size: 1.2rem;}
-.spotlight-card p{margin:3px 0; color: #555}
+
+.spotlights {
+    margin: 20px
+}
+
+.spotlights h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.spotlight-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.spotlight-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.spotlight-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.spotlight-card h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.spotlight-card p {
+    margin: 3px 0;
+    color: #555
+}
+
+/* MAIN LAYOUT - DESKTOP FIRST */
+.join-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* FORM (LEFT SIDE) */
+form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* CARDS (RIGHT SIDE) */
+.cards {
+    flex: 1;
+    display: grid;
+    gap: 15px;
+}
+
+/* CARD STYLE */
+.card {
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 12px;
+    text-align: center;
+
+    /* animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+/* STAGGER ANIMATION */
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width: 650px) {
     header span {
         font-size: 12px;
@@ -456,7 +550,34 @@ body.list-view .business-info img {
     }
 
     .home-info {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
     }
-    .spotlight-cards{grid-template-columns: 1fr;}
+
+    .spotlight-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .join-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto; /* centers the form */
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto; /* centers cards */
+    }
+
+    .card {
+        width: 100%;
+    }
+
 }
+

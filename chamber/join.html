@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kericho Chamber of Commerce Join</title>
+    <meta name="description"
+        content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
+    <meta name="author" content="Kevin Hilary">
+    <link rel="icon" href="images/favicon.svg">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Directory Page">
+    <meta property="og:description"
+        content="This is my course directory page for Web Fundamentals showing my projects and assignments.">
+    <meta property="og:image" content="https://kevinhilary.github.io/wdd231/chamber/images/chamberimg-large.webp">
+    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/chamber/directory.html">
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to the Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/buildings-fill.svg" alt="logo">
+        <span>KERICHO CHAMBER OF COMMERCE</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="firstflex navigation">
+            <ul>
+                <li class="active">
+                    <img src="images/house-door.svg" alt="home">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <img src="images/folder.svg" alt="directory">
+                    <a href="directory.html">Directory</a>
+                </li>
+
+                <li>
+                    <img src="images/people.svg" alt="join">
+                    <a href="join.html">Join</a>
+                </li>
+
+                <li>
+                    <img src="images/search.svg" alt="discover">
+                    <a href="discover.html">Discover</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-container">
+
+        <!-- FORM -->
+        <form method="get" action="thankyou.html">
+
+            <h2>Membership Application</h2>
+
+            <label>
+                First Name:
+                <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
+            </label>
+
+            <label>
+                Organizational Title:
+                <input type="text" name="orgtitle" title="Enter your title" autocomplete="organization-title"
+                    pattern="[A-Za-z\\-\\s]{7,}">
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" required title="Enter your email" placeholder="example@email.com"
+                    autocomplete="email">
+            </label>
+
+            <label>
+                Mobile Phone:
+                <input type="tel" name="phone" required title="Enter your phone number" autocomplete="tel">
+            </label>
+
+            <label>
+                Business Name:
+                <input type="text" name="business" required title="Enter business name" autocomplete="organization">
+            </label>
+
+            <label>
+                Membership Level:
+                <select name="membership" required>
+                    <option value="">Select...</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <label>
+                Business Description:
+                <textarea name="description" title="Describe your business"></textarea>
+            </label>
+
+            <!-- TIMESTAMP -->
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Apply for Membership">
+
+        </form>
+
+        <!-- MEMBERSHIP CARDS -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>NP Membership</h3>
+                <a href="#" onclick="openModal('npModal')">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h3>Bronze</h3>
+                <a href="#" onclick="openModal('bronzeModal')">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h3>Silver</h3>
+                <a href="#" onclick="openModal('silverModal')">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h3>Gold</h3>
+                <a href="#" onclick="openModal('goldModal')">View Benefits</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODALS -->
+    <div id="npModal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('npModal')">&times;</span>
+            <h3>NP Membership</h3>
+            <p>No fee, basic networking benefits.</p>
+        </div>
+    </div>
+
+    <div id="bronzeModal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('bronzeModal')">&times;</span>
+            <h3>Bronze</h3>
+            <p>Basic advertising and event access.</p>
+        </div>
+    </div>
+
+    <div id="silverModal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('silverModal')">&times;</span>
+            <h3>Silver</h3>
+            <p>Training, discounts, and better exposure.</p>
+        </div>
+    </div>
+
+    <div id="goldModal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('goldModal')">&times;</span>
+            <h3>Gold</h3>
+            <p>Premium ads, spotlight, VIP events.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <p><strong>Kericho Chamber of Commerce</strong></p>
+                <p>10 Rue De La Paix</p>
+                <p>Kericho, Kenya 999</p>
+                <p>info@kerichocc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+
+            <div class="footer-center">
+                <img src="images/youtube.svg" alt="YouTube">
+                <img src="images/twitter.svg" alt="Twitter">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </div>
+
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>Kevin Hilary</p>
+                <p>© <span id="year"></span> Kericho Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+    </footer>
+
+    <script>
+        // TIMESTAMP
+        document.getElementById("timestamp").value = new Date().toISOString();
+
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
