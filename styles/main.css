@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-name {
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 1px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+header span {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#navMenu a:hover {
+    background: green;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+}
+
+#menuBtn {
+    display: none;
+}
+
+.about {
+    background: lightgrey;
+    border-radius: 1px;
+    margin: 5px;
+}
+
+.about h2 {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.about p {
+    padding: 10px;
+}
+
+.homename {
+    padding: 10px;
+}
+
+.studentphoto {
+    background: lightgrey;
+    border-radius: 1px;
+    margin: 5px;
+}
+
+.studentphoto h2 {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.studentphoto img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.homename-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.web h2 {
+    display: block;
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.certificates {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.certificates a {
+    background: lightgrey;
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid black;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.courses p {
+    background: lightgrey;
+    border-radius: 1px;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid black;
+}
+
+.web p {
+    text-align: center;
+    padding: 10px;
+}
+
+.icons img {
+    width: 60px;
+    height: 60px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mainfooter {
+    background: lightblue;
+    padding: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+    #navMenu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #navMenu.open {
+        display: flex;
+        gap: 10px;
+    }
+
+    #menuBtn {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+        display: block;
+    }
+
+    nav a {
+        background: none;
+        border-top: 1px solid black;
+        display: block;
+        border-radius: 0%;
+    }
+
+    .homename-div {
+        display: block;
+    }
+
+    .studentphoto {
+        margin-top: 50px;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+    }
+}
