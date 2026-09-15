@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background-color: lightgray;
+    color: black;
+}
+
+header nav ul {
+    display: flex;
+    gap: 6rem;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+header img {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+header li {
+    list-style: none;
+}
+
+header span {
+    font-weight: bold;
+    position: relative;
+    top: -9px;
+}
+
+#menuBtn {
+    display: none;
+}
+
+main span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.list-grid {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.list-grid button {
+    width: 150px;
+    background-color: bisque;
+    color: black;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.card-flex {
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid black;
+    padding-top: 8px;
+}
+
+.card-flex img {
+    width: 150px;
+    height: 150px;
+}
+
+.cardflex-cards {
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+
+.bname {
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.phone {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.card-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.columngrid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.columnlist {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    #navMenu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #navMenu.open {
+        display: flex;
+        gap: 10px;
+    }
+
+    #menuBtn {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header img {
+        margin-left: 10px;
+    }
+
+    header span {
+        position: relative;
+        width: 150px;
+        display: block;
+        top: -5px;
+    }
+
+    .card-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card-flex img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .phone {
+        font-size: 15px;
+    }
+
+    .card-flex p {
+        font-size: 12px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+}
