@@ -50,7 +50,7 @@ header span {
     display: none;
 }
 
-main span {
+main h1 {
     display: block;
     font-size: 2rem;
     font-weight: bold;
