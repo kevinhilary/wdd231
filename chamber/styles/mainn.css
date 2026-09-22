@@ -132,6 +132,24 @@ footer img {
     height: 50px;
 }
 
+main picture img{width: 100%;height: 500px;}
+.absolute-container{position: relative;}
+.absolute-container h1{position: absolute;top: 10%;left: 28%;margin-top: 3rem;font-weight: bold;color: black;}
+.absolute-container h2{position: absolute;top: 0;left: 28%;margin-top: 13rem;color: white;font-style: italic;}
+.absolute-container button{position: absolute;top: 70%;left:48%;padding: 1rem;border-radius: 5px;background-color: chartreuse;border: 1px solid black;}
+.w-card{background-color: lightgray;padding: 10px;border-radius: 6px;text-align: center;border: 1px solid blue;}
+.w-flex{display: grid; grid-template-columns: 1fr 1fr;gap: 1rem;max-width: 90%;margin: 0 auto;margin-top: 1.5rem;}
+.w-card img{width: 50px;height: 50px;}
+.w-card{display: flex;gap: 7px;justify-content: center;}
+.w-card p{margin-top: 6px;}
+.ppp{margin-top: 10px;}
+.coom{background-color: chartreuse;color: black;text-align: center;padding: 10px;margin-top: 15px;}
+.ha-card{border: 1px solid brown;border-radius: 5px;width: 400px;}
+.ha-flex{display: flex;gap: 1rem;justify-content: center;}
+.ha-card img{width: 100%;height: 150px;}
+.ha-card p{text-align: center;}
+.ha-card a{display: block;text-align: center;margin-bottom: 7px;}
+.coom2{background-color: blueviolet;color: black;text-align: center;padding: 10px;margin-top: 15px;}
 @media screen and (max-width: 768px) {
     #navMenu {
         display: none;
@@ -192,4 +210,12 @@ footer img {
         gap: 1rem;
         padding-left: 1rem;
     }
+    .absolute-container h1{left: 20%;}
+    .absolute-container h2{left: 10%;margin-top: 18rem;}
+    .absolute-container button{left: 33%;top: 83%;}
+    .w-flex{display: block;}
+    .w-card{margin-bottom: 11px;}
+    .ha-flex{display: block;}
+    .ha-card{width: 300px;margin: 0 auto;margin-bottom: 15px;}
+    .coom2{font-size: 16px;}
 }

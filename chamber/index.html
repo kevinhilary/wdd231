@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kericho Chamber of Commerce Homepage</title>
+    <meta name="description"
+        content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
+    <meta name="author" content="Kevin Hilary">
+    <link rel="icon" href="images/favicon.svg">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Directory Page">
+    <meta property="og:description"
+        content="This is my course directory page for Web Fundamentals showing my projects and assignments.">
+    <meta property="og:image" content="https://kevinhilary.github.io/wdd231/chamber/images/chamberimg-large.webp">
+    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/chamber/directory.html">
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to the Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mainn.css">
+    <script src="scripts/mainn.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/buildings-fill.svg" alt="">
+            <span>KERICHO CHAMBER OF COMMERCE</span>
+        </div>
+        <button id="menuBtn"> &#9776; </button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Directory</a> </li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="absolute-container">
+            <picture>
+                <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-image-medium" media="(min-width: 550px)">
+                <img src="images/hero-image-small.webp" alt="nairobi">
+            </picture>
+
+            <h1>DISCOVER THE HEART OF OUR COMMUNITY</h1>
+            <h2>Stay Connected, informed, and engaged with everything happening locally</h2>
+            <button>EXPLORE NOW</button>
+        </div>
+        <div class="w-flex">
+            <div class="w-card">
+                <div>
+                    <img src="images/cloud-sun.svg">
+                </div>
+                <div>
+                    <p>72℉</p>
+                    <p>Partly Cloudy</p>
+                </div>
+            </div>
+            <div class="w-card">
+                <div>
+                    <img src="images/people.svg" alt="people">
+                </div>
+                <div class="ppp">
+                    <p>ALERT: Town Hall Meeting, This Thursday at 7pm</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="coom">COMMUNITY HAPPENINGS</h2>.
+        <div class="ha-flex">
+            <div class="ha-card">
+                <img src="images/sunnycafe.jpeg" alt="festival">
+                <p>SUMMER MUSIC FESTIVAL</p>
+                <p>August 15-17</p>
+                <a href="">View Event</a>
+            </div>
+            <div class="ha-card">
+                <img src="images/sunrisefitness.jpeg" alt="residence">
+                <p>LOCAL BUSINESS WIN AWARDS</p>
+                <p>August 15-17</p>
+                <a href="">Read Full Article</a>
+            </div>
+            <div class="ha-card">
+                <img src="images/elegantdesigns.jpeg" alt="residence">
+                <p>NEW RESIDENT GUIDE</p>
+                <p>August 15-17</p>
+                <a href="">Download PDF</a>
+            </div>
+        </div>
+        <h2 class="coom2">FEATURED BUSINESS SPOTLIGHT</h2>
+    </main>
+    <footer>
+        <div>
+            <p><strong>Kericho Chamber of Commerce</strong></p>
+            <p>10 Rue La Kenya</p>
+            <p>Kericho, Kenya</p>
+            <p>info@kerichochamber@gmail.com</p>
+            <p>254 799822155</p>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/youtube.svg" alt="youtube">
+            </a>
+            <a href="#">
+                <img src="images/twitter.svg" alt="twitter">
+            </a>
+            <a href="#">
+                <img src="images/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Kevin Kassamani</p>
+            <p>2026 Kericho Chamber of Commerce</p>
+            <p id="lastmodiii"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
