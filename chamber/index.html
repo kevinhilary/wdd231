@@ -35,14 +35,13 @@
         <button id="menuBtn"> &#9776; </button>
         <nav id="navMenu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Directory</a> </li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a> </li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <div class="absolute-container">
             <picture>
@@ -57,12 +56,16 @@
         </div>
         <div class="w-flex">
             <div class="w-card">
-                <div>
+                <div class="hyu">
                     <img src="images/cloud-sun.svg">
                 </div>
                 <div>
-                    <p>72℉</p>
-                    <p>Partly Cloudy</p>
+                    <section class="weather">
+                        <h2>Weather</h2>
+                        <div id="current-weather"></div>
+                        <h3>3-Day Forecast</h3>
+                        <div id="forecast"></div>
+                    </section>
                 </div>
             </div>
             <div class="w-card">
@@ -70,7 +73,7 @@
                     <img src="images/people.svg" alt="people">
                 </div>
                 <div class="ppp">
-                    <p>ALERT: Town Hall Meeting, This Thursday at 7pm</p>
+                    <p class="ppps">ALERT: Town Hall Meeting, This Thursday at 7pm</p>
                 </div>
             </div>
         </div>
@@ -96,6 +99,21 @@
             </div>
         </div>
         <h2 class="coom2">FEATURED BUSINESS SPOTLIGHT</h2>
+        <div class="card-columnss">
+
+        </div>
+
+        <h2 class="coom2">GET INVOLVED</h2>
+        <div class="bx">
+            <div class="box">
+                <h4>I'M A RESIDENT</h4>
+                <button>FIND SERVICES</button>
+            </div>
+            <div class="box box2">
+                <h4>I'M A BUSINNESS OWNER</h4>
+                <button>ADD YOUR LISTING</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div>
