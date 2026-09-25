@@ -136,13 +136,13 @@ footer img {
 main picture img{width: 100%;height: 500px;}
 .absolute-container{position: relative;}
 .absolute-container h1{position: absolute;top: 10%;left: 28%;margin-top: 3rem;font-weight: bold;color: black;}
-.absolute-container h2{position: absolute;top: 0;left: 28%;margin-top: 13rem;color: white;font-style: italic;}
+.absolute-container h2{position: absolute;top: 0;left: 28%;margin-top: 13rem;color: black;font-style: italic;}
 .absolute-container button{position: absolute;top: 70%;left:48%;padding: 1rem;border-radius: 5px;background-color: chartreuse;border: 1px solid black;}
-.w-card{background-color: lightgray;padding: 10px;border-radius: 6px;text-align: center;border: 1px solid blue;}
+.w-card{background-color: lightgray;padding: 10px;border-radius: 6px;text-align: center;border: 1px solid blue;display: flex;gap: 7px;justify-content: center;}
 .w-flex{display: grid; grid-template-columns: 1fr 1fr;gap: 1rem;max-width: 90%;margin: 0 auto;margin-top: 1.5rem;}
 .w-card img{width: 50px;height: 50px;}
 .hyu img{margin-top: 5rem;padding-right: 10px;}
-.w-card{display: flex;gap: 7px;justify-content: center;}
+
 .w-card p{margin-top: 6px;}
 .ppp{margin-top: 10px;}
 .coom{background-color: chartreuse;color: black;text-align: center;padding: 10px;margin-top: 15px;}
@@ -151,9 +151,9 @@ main picture img{width: 100%;height: 500px;}
 .ha-card img{width: 100%;height: 150px;}
 .ha-card p{text-align: center;}
 .ha-card a{display: block;text-align: center;margin-bottom: 7px;}
-.coom2{background-color: blueviolet;color: black;text-align: center;padding: 10px;margin-top: 15px;}
+.coom2{background-color: blueviolet;color: white;text-align: center;padding: 10px;margin-top: 15px;}
 .card-columnss{display: grid;grid-template-columns: 1fr 1fr 1fr;}
-.box{padding: 1rem;background-color: blueviolet;color: white;display: inline-block;border-radius: 6px;box-shadow: 1rem;text-align: center;}
+.box{padding: 1rem;background-color: blueviolet;color: white;display: inline-block;border-radius: 6px;text-align: center;}
 .box2{background-color: black;}
 .bx{display:grid; grid-template-columns: 1fr 1fr; margin-top: 1rem;gap: 10px; justify-content: center;align-content: center;max-width: 80%;margin-left: 6rem;}
 .box button{padding: 11px;background-color: chartreuse;color: black;margin-top: 6px;border-radius: 7px;border: 1px solid black;}
@@ -228,5 +228,4 @@ main picture img{width: 100%;height: 500px;}
     .coom2{font-size: 16px;}
     .card-columnss{grid-template-columns:1fr ;}
     .bx{display: grid;grid-template-columns: 1fr;margin-left: 2.5rem;}
-    body{width: 100%;}
 }
