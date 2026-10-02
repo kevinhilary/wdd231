@@ -189,3 +189,65 @@ const getWeather = async() => {
 };
 
 getWeather();
+
+const np = document.querySelector("#npModal");
+const bronze = document.querySelector("#bronzeModal");
+const silver = document.querySelector("#silverModal");
+const gold = document.querySelector("#goldModal");
+
+const opennpModal = document.querySelector("#opennpModal");
+const closeNP = document.querySelector("#closeNP");
+
+opennpModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    np.showModal();
+} );
+
+closeNP.addEventListener("click", () => {
+    np.close();
+});
+
+
+const openbronzeModal = document.querySelector("#openbronzeModal");
+const closeBronze = document.querySelector("#closeBronze");
+
+openbronzeModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    bronze.showModal();
+} );
+
+closeBronze.addEventListener("click", () => {
+    bronze.close();
+});
+
+const opensilverModal = document.querySelector("#opensilverModal");
+const closeSilver = document.querySelector("#closeSilver");
+
+opensilverModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    silver.showModal();
+} );
+
+closeSilver.addEventListener("click", () => {
+    silver.close();
+});
+
+const opengoldModal = document.querySelector("#opengoldModal");
+const closeGold = document.querySelector("#closeGold");
+
+opengoldModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    gold.showModal();
+} );
+
+closeGold.addEventListener("click", () => {
+    gold.close();
+});
+
+const timestamp = document.querySelector("#timestamp");
+timestamp.value = new Date().toLocaleString();
+
+
+
+
+

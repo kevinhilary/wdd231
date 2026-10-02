@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kericho Chamber of Commerce Homepage</title>
+    <title>Kericho Chamber of Commerce Joinpage</title>
     <meta name="description"
         content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
     <meta name="author" content="Kevin Hilary">
     <link rel="icon" href="images/favicon.svg">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Directory Page">
+    <meta property="og:title" content=" Page">
     <meta property="og:description"
         content="This is my course directory page for Web Fundamentals showing my projects and assignments.">
     <meta property="og:image" content="https://kevinhilary.github.io/wdd231/chamber/images/chamberimg-large.webp">
@@ -45,45 +45,36 @@
     <main class="join">
         <h1>Join the Chamber</h1>
         <div class="form-div">
-            <form method="get" action="thankyou.html">
-                <label>
-                    First name
-                    <input type="text" name="firstName" title="Enter your first Name" autocomplete="given-name"
-                        required>
-                </label>
-                <label>
-                    Organizational Title
-                    <input type="text" name="organization Title" title="Enter your Organizational title"
-                        autocomplete="organization-title" pattern="[A-Za-z/s-]{7,}">
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="email" title="Enter your email address" autocomplete="email"
-                        placeholder="ashialik22@gmail.com" required>
-                </label>
-                <label>
-                    Mobile Phone
-                    <input type="tel" name="phone" title="Enter your mobile phone numberr" autocomplete="tel" required>
-                </label>
-                <label>
-                    Organization Name
-                    <input type="text" name="email" title="Enter your Organization Name" autocomplete="organization"
-                        required>
-                </label>
-                <label>
-                    Membership Level
-                    <select name="membership required">
-                        <option value="">Select a membership</option>
-                        <option value="np">NP Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
-                <label>
-                    Organization description
-                    <textarea name="description" title="Describe your organization"></textarea>
-                </label>
+            <form action="thankyou.html" method="GET">
+                <label for="firstName">Full Name: </label>
+                <input type="text" id="firstName" name="firstName" title="Enter your first Name" autocomplete="given-name" required>
+
+                <label for="organizationTitle">Organization Title:</label>
+                <input type="text" id="organizationTitle" name="tt" title="Enter your Organizational title"
+                    autocomplete="organization-title" pattern="[A-Za-z/s-]{7,}">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                    placeholder="ashialik22@gmail.com" required>
+
+                <label for="phone">Mobile Phone</label>
+                <input type="tel" id="phone" name="phone" title="Enter your mobile phone numberr" autocomplete="tel" required>
+
+                <label for="ogName">Organization Name</label>
+                <input type="text" id="ogName" name="ogName" title="Enter your Organization Name" autocomplete="organization"
+                    required>
+
+                <label for="membershiprequired">Membership Level</label>
+                <select id="membershiprequired" name="membershiprequired">
+                    <option value="">Select a membership</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Organization description</label>
+                <textarea id="description" name="description" title="Describe your organization"></textarea>
 
                 <input type="hidden" name="timestamp" id="timestamp">
                 <input type="submit" value="Apply Now">
@@ -94,28 +85,52 @@
                     <h2>NP Membership</h2>
                     <p>For non profit organizations</p>
                     <p>No membership fee</p>
-                    <a href="#npModal">More Information</a>
+                    <a href="#npModal" id="opennpModal">More Information</a>
                 </div>
                 <div class="membership-cardd">
                     <h2>Bronze Membership</h2>
                     <p>For profit organizations</p>
                     <p>Basic business benefits</p>
-                    <a href="#bronzeModal">More Information</a>
+                    <a href="#bronzeModal" id="openbronzeModal">More Information</a>
                 </div>
                 <div class="membership-cardd">
                     <h2>Silver Membership</h2>
                     <p>More advertising, training</p>
                     <p>and event discounts</p>
-                    <a href="#silverModal">More Information</a>
+                    <a href="#silverModal" id="opensilverModal">More Information</a>
                 </div>
                 <div class="membership-cardd">
                     <h2>Gold Membership</h2>
                     <p>Premium benefits and exposure</p>
                     <p>No membership fee</p>
-                    <a href="#npModal">More Information</a>
+                    <a href="#goldModal" id="opengoldModal">More Information</a>
                 </div>
             </section>
         </div>
+        <dialog id="bronzeModal">
+            <h2>Bronze Membership</h2>
+            <p><strong>Cost: </strong>ksh 2,000</p>
+            <p><strong>Benefits: </strong>Event discounts + training</p>
+            <button id="closeBronze">Close</button>
+        </dialog>
+        <dialog id="npModal">
+            <h2>NP Membership</h2>
+            <p><strong>Cost: </strong>ksh 1,000</p>
+            <p><strong>Benefits: </strong>Event discounts</p>
+            <button id="closeNP">Close</button>
+        </dialog>
+        <dialog id="silverModal">
+            <h2>Silver Membership</h2>
+            <p><strong>Cost: </strong>ksh 3,500</p>
+            <p><strong>Benefits: </strong>Training + Advertisng</p>
+            <button id="closeSilver">Close</button>
+        </dialog>.
+        <dialog id="goldModal">
+            <h2>Gold Membership</h2>
+            <p><strong>Cost:</strong> ksh 5,000</p>
+            <p><strong>Benefits: </strong>All benefits + premium advertising + special events</p>
+            <button id="closeGold">Close</button>
+        </dialog>
     </main>
     <footer>
         <div>
