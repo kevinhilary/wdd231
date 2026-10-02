@@ -7,6 +7,7 @@ const phone = params.get("phone");
 const ogName = params.get("ogName");
 const memb = params.get("membershiprequired");
 const times = params.get("timestamp");
+const lname = params.get("lastName");
 
 
 document.querySelector("#firstNamee").textContent = fname;
@@ -16,3 +17,4 @@ document.querySelector("#phonee").textContent = phone;
 document.querySelector("#ogName").textContent = ogName;
 document.querySelector("#memb").textContent = memb;
 document.querySelector("#timee").textContent = times;
+document.querySelector("#lastNamee").textContent = lname;
