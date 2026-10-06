@@ -405,7 +405,8 @@ form input[type="submit"]:hover {
         transform: translateY(0);
     }
 }
-dialog{
+
+dialog {
     width: 500px;
     padding: 20px;
     border: none;
@@ -413,14 +414,90 @@ dialog{
     margin: auto;
 }
 
-dialog::backdrop{background: rgba(0, 0, 0, 0.5);}
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
 
-dialog button{padding: 10px; border: 1px solid black; background: red;color: black;text-align: center;border-radius: 6px;display: block;margin: 0 auto;margin-top: 1rem;width: 100px;}
-dialog h2{padding: 10px;text-align: center;}
-.may{max-width: 600px;margin: 60px auto;padding: 30px;background: #f5f5f5;border-radius: 12px;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);}
-.may h1{text-align: center; margin-bottom: 30px;}
-.may p{ padding: 12px;margin: 10px  0;background: white;border-radius: 6px;font-size: 16px;}
-.may span{font-weight: bold;}
+dialog button {
+    padding: 10px;
+    border: 1px solid black;
+    background: red;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 100px;
+}
+
+dialog h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.may {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.may h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.may p {
+    padding: 12px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.may span {
+    font-weight: bold;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+        "card1 card2 card3 card4"
+        "card1 card5 card6 card4"
+        "card7 card5 card6 card8";
+        grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
+
+#visit-message{text-align: center; font-weight: 600;margin-top: 2rem;margin-bottom: 2rem;}
+.discover-card img:hover{transform: scale(1.05);}
+.discover-card img{width: 100%;transition: transform 0.3s ease;border-radius: 8px;}
+.learn-more{display: inline-block;text-decoration: none;padding: 0.6rem 1rem;background-color: #006400;color: white;border: none;border-radius: 5px;cursor: pointer;}
+.discover-card{background-color: #fff;border-radius: 10px;padding: 1rem;box-shadow: 0 2px 8px rgba(0,0,0,0.15);margin-top: 1rem;}
+.discover-card h2{margin-bottom: 0.75rem;font-size: 1.3rem;text-align: center;}
+.discover-card address{margin: 0.75rem 0;font-style: normal;font-weight: 600;}
+.discover-card p{line-height: 1.6;margin-bottom: 1rem;}
+.discover-card figure{margin: 0;}
+.discover-grid{margin-left: 1rem;margin-right: 1rem;}
+
+@media screen and (min-width: 641px) and (max-width: 1024px){
+    .discover-grid{
+        grid-template-areas: "card1 card2" "card3 card4" "card5 card6" "card7 card8";
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     #navMenu {
@@ -532,4 +609,9 @@ dialog h2{padding: 10px;text-align: center;}
     .form-div {
         grid-template-columns: 1fr;
     }
+    .discover-grid{
+        grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8";
+        grid-template-columns: 1fr;
+    }
+    .discover-grid{justify-items: center;}
 }
