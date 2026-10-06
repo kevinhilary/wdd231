@@ -470,6 +470,7 @@ dialog h2 {
         "card7 card5 card6 card8";
         grid-template-columns: repeat(4,1fr);
     gap: 1rem;
+    margin-left: 1rem;margin-right: 1rem;
 }
 
 .discover-card:nth-child(1) { grid-area: card1; }
@@ -490,7 +491,7 @@ dialog h2 {
 .discover-card address{margin: 0.75rem 0;font-style: normal;font-weight: 600;}
 .discover-card p{line-height: 1.6;margin-bottom: 1rem;}
 .discover-card figure{margin: 0;}
-.discover-grid{margin-left: 1rem;margin-right: 1rem;}
+.dih{text-align: center;margin-bottom: 1rem;}
 
 @media screen and (min-width: 641px) and (max-width: 1024px){
     .discover-grid{
@@ -614,4 +615,5 @@ dialog h2 {
         grid-template-columns: 1fr;
     }
     .discover-grid{justify-items: center;}
+    .discover-card img:hover{transform: none;}
 }
