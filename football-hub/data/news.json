@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Chelsea Prepare for Their Next Challenge",
+    "summary": "Chelsea continue preparations as they aim to build momentum in their upcoming fixtures.",
+    "category": "Club News",
+    "image": "images/chelsea.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Premier League Title Race Heats Up",
+    "summary": "Top clubs battle for crucial points as the Premier League season progresses.",
+    "category": "Premier League",
+    "image": "images/premier-league.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Champions League Nights Return",
+    "summary": "Europe's biggest clubs prepare for another exciting round of Champions League football.",
+    "category": "Champions League",
+    "image": "images/champions-league.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Young Talents Make Their Mark",
+    "summary": "Promising young footballers continue to impress with their performances this season.",
+    "category": "Players",
+    "image": "images/young-players.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "Transfer Rumours Gain Attention",
+    "summary": "Supporters follow the latest speculation surrounding potential moves between clubs.",
+    "category": "Transfers",
+    "image": "images/transfer-news.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "Managers Prepare New Tactics",
+    "summary": "Coaches work on tactical adjustments to give their teams an advantage in upcoming matches.",
+    "category": "Analysis",
+    "image": "images/football-tactics.jpeg"
+  },
+  {
+    "id": 7,
+    "title": "Defenders Deliver Important Performances",
+    "summary": "Strong defensive displays demonstrate the importance of organisation and teamwork.",
+    "category": "Match Analysis",
+    "image": "images/defenders.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "Goalkeepers Produce Match-Saving Stops",
+    "summary": "Goalkeepers remain crucial as outstanding saves help teams protect valuable results.",
+    "category": "Players",
+    "image": "images/goalkeeper.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "International Football Takes Centre Stage",
+    "summary": "National teams prepare for important international fixtures and qualification campaigns.",
+    "category": "International",
+    "image": "images/international-football.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Classic Rivalries Continue",
+    "summary": "Historic rivalries bring excitement, pressure and unforgettable moments to football fans.",
+    "category": "Football Culture",
+    "image": "images/football-rivalry.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "The Importance of Midfield Control",
+    "summary": "Teams rely on creative and hardworking midfielders to control the pace of matches.",
+    "category": "Analysis",
+    "image": "images/midfielders.jpeg"
+  },
+  {
+    "id": 12,
+    "title": "Strikers Search for Consistent Goals",
+    "summary": "Forwards aim to maintain their scoring form and make the difference in tight matches.",
+    "category": "Players",
+    "image": "images/strikers.jpeg"
+  },
+  {
+    "id": 13,
+    "title": "Football Fans Create Electric Atmospheres",
+    "summary": "Supporters bring colour, passion and energy to stadiums around the world.",
+    "category": "Fan Zone",
+    "image": "images/football-fans.jpg"
+  },
+  {
+    "id": 14,
+    "title": "How Set Pieces Change Matches",
+    "summary": "Corners and free kicks provide teams with important opportunities to score decisive goals.",
+    "category": "Tactics",
+    "image": "images/setpieces.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Looking Ahead to the Weekend Fixtures",
+    "summary": "Fans anticipate a packed schedule of matches featuring important league encounters.",
+    "category": "Fixtures",
+    "image": "images/weekend-fixtures.jpg"
+  }
+]

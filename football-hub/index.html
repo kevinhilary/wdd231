@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Hub Home</title>
+    <meta name="description"
+        content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
+    <meta name="author" content="Kevin Hilary">
+    <link rel="icon" href="images/favicon.svg">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Home Page">
+    <meta property="og:description"
+        content="This is my course home page for Web Fundamentals showing my projects and assignments.">
+    <meta property="og:image" content="https://kevinhilary.github.io/wdd231/chamber/images/chamberimg-large.webp">
+    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/football-hub/index.html">
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to the Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/football.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="habu-f">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h1>Football Hub</h1>
+        </div>
+        <button id="menuBtn"> &#9776;</button>
+        <div class="habu-f1">
+            <nav class="navMenu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="#">Fixtures & Results</a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <img src="images/hero-image-optimized.webp" alt="hero-image" class="hero-image" loading="lazy">
+            <h1>Welcome to <br>Football Hub</h1>
+            <p>Your ultimate destination for the latest news,<br>players,fixtures and everything about the game.</p>
+            <button>Explore Now</button>
+            <img src="images/ronaldo-messi-optimized.webp" alt="goats" loading="lazy" class="hero-image2">
+        </section>
+        <div class="latee">
+            <div class="late">
+                <h2>Latest News</h2>
+                <a href="view.html">View All News →</a>
+            </div>
+            <div class="randomCards"></div>
+        </div>
+        <div class="baki">
+            <div class="late">
+                <h2 class="up">Upcoming Fixtures</h2>
+                <a href="fixtures.html" class="viu">View All Fixtures →</a>
+            </div>
+            <div class="fixture-flex">
+                <div class="upcoming-fixtures">
+                    <div class="fixtures-header">
+                        <h3>Upcoming Fixtures</h3>
+                        <p>Don't miss the next big matches</p>
+                    </div>
+                    <div class="fixtures-container" id="fixturesContainer">
+                    </div>
+                </div>
+                <div class="recent-results">
+                    <div class="recent-header">
+                        <h3>Recent Results</h3>
+                        <p>Here are the latest match outcomes</p>
+                    </div>
+                    <div class="recent-container" id="recentContainer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="learn-flex">
+            <div>
+                <h2>About Football Hub</h2>
+                <p>Football Hub is your ultimate destination for everything football. From the latest match results and
+                    live
+                    scores to upcoming fixtures and breaking football news, we bring you closer to the action. Stay
+                    updated
+                    on your favorite teams, follow major leagues from around the world, and keep track of every
+                    important
+                    moment on the pitch. Whether it's a thrilling derby, a crucial league match, or an exciting European
+                    night, Football Hub keeps you informed and connected to the game you love. Everything a football fan
+                    needs, all in one place.</p>
+                <button>Learn More</button>
+            </div>
+            <img src="images/learn-more.webp" alt="Learn-More" loading="lazy">
+        </div>
+    </main>
+    <footer>
+        <div class="first-flexx">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h2>Football Hub</h2>
+        </div>
+        <div class="second-flex">
+            <div>
+                <nav>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="#">Fixtures & Results</a></li>
+                </nav>
+            </div>
+            <div>
+                <p id="yearmodified"></p>
+            </div>
+        </div>
+        <div class="third-flex">
+            <div>
+                <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="facebook"> </a>
+                <a href="#"><img src="images/twitter-logo-svgrepo-com.svg" alt="X"> </a>
+                <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="instagram"> </a>
+                <a href="#"><img src="images/youtube-svgrepo-com.svg" alt="youtube"> </a>
+            </div>
+            <div class="watch">
+                <a href="">▶️ Watch Demo Video</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
