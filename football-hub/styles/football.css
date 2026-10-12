@@ -141,4 +141,5 @@ footer{display: flex;justify-content: space-between;align-items: center;color: w
     .team-flex nav a{padding: 8px;font-size: 12px;}
     .player-div{grid-template-columns: 1fr 1fr;}
     .player-card a{font-size: 0.8rem;padding: 4px 0;}
+    .bottomNav{position: fixed;bottom: 0;left: 0;width: 100%;z-index: 1000;background-color: #0b1f17;padding: 10px 10px;box-shadow: 0 -3px 12px rgba(0,0,0,0.2);border-top: 1px solid #244536;justify-content: space-around;}
 }
