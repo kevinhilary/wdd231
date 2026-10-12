@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Hub Team</title>
+    <meta name="description"
+        content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
+    <meta name="author" content="Kevin Hilary">
+    <link rel="icon" href="images/favicon.svg">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Team Page">
+    <meta property="og:description"
+        content="This is my course home page for Web Fundamentals showing my projects and assignments.">
+    <meta property="og:image" content="https://kevinhilary.github.io/wdd231/chamber/images/chamberimg-large.webp">
+    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/football-hub/index.html">
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to the Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/football.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="habu-f">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h1>Football Hub</h1>
+        </div>
+        <button id="menuBtn"> &#9776;</button>
+        <div class="habu-f1">
+            <nav class="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="#" class="active">Team</a></li>
+                <li><a href="#">Fixtures & Results</a></li>
+            </nav>
+        </div>
+    </header>
+    <main class="beki">
+        <section class="hero-sectionn">
+            <img src="images/hero-image-optimized.webp" alt="hero-image" class="hero-imagee" loading="lazy">
+            <h1>Our Team</h1>
+            <p>Meet the players who make it happen</p>
+        </section>
+        <div class="team-flex">
+            <nav>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Forwards</a></li>
+                <li><a href="#">Midfielders</a></li>
+                <li><a href="#">Defenders</a></li>
+                <li><a href="#">Goalkeepers</a></li>
+            </nav>
+        </div>
+        <div class="player-div" id="playerdiv"></div>
+    </main>
+    <footer>
+        <div class="first-flexx">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h2>Football Hub</h2>
+        </div>
+        <div class="second-flex">
+            <div>
+                <nav>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="#">Fixtures & Results</a></li>
+                </nav>
+            </div>
+            <div>
+                <p id="yearmodified"></p>
+            </div>
+        </div>
+        <div class="third-flex">
+            <div>
+                <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="facebook"> </a>
+                <a href="#"><img src="images/twitter-logo-svgrepo-com.svg" alt="X"> </a>
+                <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="instagram"> </a>
+                <a href="#"><img src="images/youtube-svgrepo-com.svg" alt="youtube"> </a>
+            </div>
+            <div class="watch">
+                <a href="">▶️ Watch Demo Video</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

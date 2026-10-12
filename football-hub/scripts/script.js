@@ -259,5 +259,47 @@ const year = document.querySelector("#yearmodified");
 const curreny = new Date().getFullYear();
 year.textContent = `© ${curreny} Football Hub | All rights reserved`
 
+async function getPlayerInfo(){
+    try{
+        const response = await fetch("https://live-football-api.com/api/v1/team_squad?api_key=56a7158f2d3489332fe01550734b702e7a0867dae8efefc92a6230e0788dcdff&team_id=7esunfo4e4xihd0h83euabeox");
+        if(!response.ok){
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+        const data = await response.json();
+        const shuffled = data.data.squad.sort(() => Math.random()-0.5);
+        const players = shuffled.slice(0,20);
+        console.log(players);
+        const container = document.querySelector("#playerdiv");
+
+        function displayPlayers(players){
+            players.forEach(function (player){
+                const playerCard = document.createElement("div");
+                playerCard.classList.add("player-card");
+                container.appendChild(playerCard);
+                const playerImg = document.createElement("img");
+                playerImg.src = player.image;
+                playerCard.appendChild(playerImg);
+                const playerName = document.createElement("h3");
+                playerName.textContent = player.name;
+                playerCard.appendChild(playerName);
+                const position = document.createElement("p");
+                position.textContent = `Position: ${player.position}`;
+                playerCard.appendChild(position);
+                const country = document.createElement("p");
+                country.textContent = `Country: ${player.country}`;
+                playerCard.appendChild(country);
+                const age = document.createElement("p");
+                age.textContent = `Age: ${player.age}`;
+                playerCard.appendChild(age);
+            });
+        }
+        displayPlayers(players);
+    }
+    catch(error){
+        console.error("Failed to fetch players:", error);
+    }
+}
+getPlayerInfo();
+
 
 
