@@ -272,6 +272,7 @@ async function getPlayerInfo(){
         const container = document.querySelector("#playerdiv");
 
         function displayPlayers(players){
+            container.innerHTML = "";
             players.forEach(function (player){
                 const playerCard = document.createElement("div");
                 playerCard.classList.add("player-card");
@@ -294,6 +295,36 @@ async function getPlayerInfo(){
             });
         }
         displayPlayers(players);
+
+        const all = document.querySelector(".all");
+        const midfield = document.querySelector(".midfield");
+        const defenders = document.querySelector(".defenders");
+        const attackers = document.querySelector(".attackers")
+        const goalkeepers = document.querySelector(".goalkeepers");
+
+        all.addEventListener("click", function(){
+            displayPlayers(players);
+        })
+
+        midfield.addEventListener("click", function(){
+            const midfield = players.filter(player => player.position === "Midfielder");
+            displayPlayers(midfield);
+        })
+ 
+        defenders.addEventListener("click", function(){
+            const defenders = players.filter(player => player.position === "Defender");
+            displayPlayers(defenders);
+        })
+
+        goalkeepers.addEventListener("click", function(){
+            const goalkeepers = players.filter(player => player.position === "Goalkeeper");
+            displayPlayers(goalkeepers);
+        })
+
+        attackers.addEventListener("click", function(){
+            const attackers = players.filter(player => player.position === "Attacker");
+            displayPlayers(attackers);
+        })
     }
     catch(error){
         console.error("Failed to fetch players:", error);
