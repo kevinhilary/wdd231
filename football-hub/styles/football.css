@@ -93,7 +93,14 @@ footer{display: flex;justify-content: space-between;align-items: center;color: w
 .player-card p{margin: 6px 0;font-size: 14px;}
 .player-div{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;gap: 20px;padding: 30px;}
 .beki{background: #111827;}
-
+.player-card a{display: inline-block;background-color: #38bdf8;color: #111827;text-decoration: none;padding: 10px 16px;border-radius: 6px;font-weight: 600;margin-top: 10px;transition: background-color 0.3s ease;margin-bottom: 10px;}
+.player-card a:hover{background-color: #0EA5E1;}
+.player-modal{background: #1e293b;color: white;border: none;border-radius: 15px;width: 90%;max-width: 450px;max-height: 85vh;overflow-y: auto;margin: auto;}
+.player-modal::backdrop{background: rgba(0,0,0,0.75);}
+.modal-image{width: 100%;height: 220px;border-radius: 5px;}
+.close-modal{display: block;margin-left: auto;font-size: 24px;cursor: pointer;margin-bottom: 10px;margin-top: 10px;margin-right: 10px;}
+.modal-content h2{margin: 12px 0 5px;color: #38bdf8;text-align: center;}
+.modal-content p{font-size: 14px;margin: 6px 0;text-align: center;}
 
 @media screen and (max-width: 768px) {
 .habu-f1 nav.navMenu {
@@ -133,4 +140,5 @@ footer{display: flex;justify-content: space-between;align-items: center;color: w
     .team-flex nav{gap: 0.8rem;}
     .team-flex nav a{padding: 8px;font-size: 12px;}
     .player-div{grid-template-columns: 1fr 1fr;}
+    .player-card a{font-size: 0.8rem;padding: 4px 0;}
 }
