@@ -797,6 +797,16 @@ main {
     background: #1765a8;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+}
+
 
 @media screen and (max-width: 768px) {
     .habu-f1 nav.navMenu {
