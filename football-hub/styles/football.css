@@ -753,6 +753,7 @@ main {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+
 .thankyou-section {
     max-width: 650px;
     margin: 4rem auto;
@@ -796,22 +797,6 @@ main {
     background: #1765a8;
 }
 
-@media screen and (max-width: 600px) {
-    .thankyou-section {
-        margin: 1.5rem 1rem;
-        padding: 1.25rem;
-    }
-
-    .thankyou-section h1 {
-        font-size: 1.6rem;
-    }
-}
-
-#subscribeForm button:hover {
-    background-color: #1765a8;
-}
-html,body{width: 100%;}
-body{overflow-x: hidden;}
 
 @media screen and (max-width: 768px) {
     .habu-f1 nav.navMenu {
@@ -975,31 +960,49 @@ body{overflow-x: hidden;}
         justify-content: space-around;
     }
 
-    /* Small Screens */
-    @media screen and (max-width: 600px) {
-        .subscribe-section {
-            margin: 1.5rem 1rem;
-            padding: 1.25rem;
-            border-radius: 8px;
-        }
+    .thankyou-section {
+        margin: 1.5rem 1rem;
+        padding: 1.25rem;
+    }
 
-        .subscribe-section h1 {
-            font-size: 1.6rem;
-        }
+    .thankyou-section h1 {
+        font-size: 1.6rem;
+    }
 
-        #subscribeForm {
-            grid-template-columns: 1fr;
-            gap: 0.6rem;
-        }
+    .subscribe-section {
+        margin: 1.5rem 1rem;
+        padding: 1.25rem;
+        border-radius: 8px;
+    }
 
-        #subscribeForm label {
-            margin-top: 0.4rem;
-        }
+    .subscribe-section h1 {
+        font-size: 1.6rem;
+    }
 
-        #subscribeForm button {
-            grid-column: 1;
-            width: 100%;
-            padding: 0.85rem;
-        }
+    #subscribeForm {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    #subscribeForm label {
+        margin-top: 0.4rem;
+    }
+
+    #subscribeForm button {
+        grid-column: 1;
+        width: 100%;
+        padding: 0.85rem;
+    }
+}
+
+@media(orientation: landscape) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
     }
 }
