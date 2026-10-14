@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Hub Resluts</title>
+    <meta name="description"
+        content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
+    <meta name="author" content="Kevin Hilary">
+    <link rel="icon" href="images/favicon.svg">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Results Page">
+    <meta property="og:description"
+        content="This is my course results page for Web Fundamentals showing my projects and assignments.">
+    <meta property="og:image" content="https://kevinhilary.github.io/wdd231/football-hub/images/hero-image-optimized.webp">
+    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/football-hub/results.html">
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to the Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/football.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/fixtures.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="habu-f">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h1>Football Hub</h1>
+        </div>
+        <button id="menuBtn"> &#9776;</button>
+        <div class="habu-f1">
+            <nav class="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view.html">News</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="#" class="active">Fixtures & Results</a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="baki">
+            <h2 class="apu">Upcoming Fixtures & Results</h2>
+            <div class="fixture-flex">
+                <div class="upcoming-fixtures">
+                    <div class="fixtures-header">
+                        <h3>Upcoming Fixtures</h3>
+                        <p>Don't miss the next big matches</p>
+                    </div>
+                    <div class="fixturess-container" id="fixturessContainer">
+                    </div>
+                </div>
+                <div class="recent-results">
+                    <div class="recent-header">
+                        <h3>Recent Results</h3>
+                        <p>Here are the latest match outcomes</p>
+                    </div>
+                    <div class="recentt-container" id="recenttContainer"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="first-flexx">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h2>Football Hub</h2>
+        </div>
+        <div class="second-flex">
+            <div>
+                <nav class="bottomNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Players</a></li>
+                    <li><a href="view.html">News</a></li>
+                    <li><a href="results.html" class="active">Fixtures & Results</a></li>
+                </nav>
+            </div>
+            <div>
+                <p id="yearmodified"></p>
+            </div>
+        </div>
+        <div class="third-flex">
+            <div>
+                <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="facebook"> </a>
+                <a href="#"><img src="images/twitter-logo-svgrepo-com.svg" alt="X"> </a>
+                <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="instagram"> </a>
+                <a href="#"><img src="images/youtube-svgrepo-com.svg" alt="youtube"> </a>
+            </div>
+            <div class="watch">
+                <a href="">▶️ Watch Demo Video</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <meta name="description"
+        content="Kevin Hilary is a web and computer programming student in Kenya building responsive websites and also studing Medicine.">
+    <meta name="author" content="Kevin Hilary">
+    <link rel="icon" href="images/favicon.svg">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="News Page">
+    <meta property="og:description"
+        content="This is my course view page for Web Fundamentals showing my projects and assignments.">
+    <meta property="og:image" content="https://kevinhilary.github.io/wdd231/football-hub/images/hero-image-optimized.webp">
+    <meta property="og:url" content="https://kevinhilary.github.io/wdd231/football-hub/subscribe.html">
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to the Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/football.css">
+    <script src="scripts/script.js" defer></script>
+    <script type="module" src="scripts/subscribe.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="habu-f">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h1>Football Hub</h1>
+        </div>
+        <button id="menuBtn"> &#9776;</button>
+        <div class="habu-f1">
+            <nav class="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view.html">News</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="results.html">Fixtures & Results</a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="subscribe-section">
+            <h1>Join Football Hub</h1>
+            <p>Get football news, fixtures, and results in one place.</p>
+
+            <p id="visitMessage" aria-live="polite"></p>
+
+            <form id="subscribeForm" action="thankyou.html" method="get">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="favoriteTeam">Favourite team</label>
+                <input type="text" id="favoriteTeam" name="favoriteTeam" placeholder="e.g. Chelsea" required>
+
+                <label for="updates">Updates you'd like to receive</label>
+                <select id="updates" name="updates" required>
+                    <option value="">Choose an option</option>
+                    <option value="news">Football news</option>
+                    <option value="fixtures">Fixtures and results</option>
+                    <option value="all">All updates</option>
+                </select>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="first-flexx">
+            <img src="images/football-svgrepo-com.svg" alt="football-icon">
+            <h2>Football Hub</h2>
+        </div>
+        <div class="second-flex">
+            <div>
+                <nav class="bottomNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Players</a></li>
+                    <li><a href="view.html">News</a></li>
+                    <li><a href="results.html">Fixtures & Results</a></li>
+                </nav>
+            </div>
+            <div>
+                <p id="yearmodified"></p>
+            </div>
+        </div>
+        <div class="third-flex">
+            <div>
+                <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="facebook"> </a>
+                <a href="#"><img src="images/twitter-logo-svgrepo-com.svg" alt="X"> </a>
+                <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="instagram"> </a>
+                <a href="#"><img src="images/youtube-svgrepo-com.svg" alt="youtube"> </a>
+            </div>
+            <div class="watch">
+                <a href="">▶️ Watch Demo Video</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
