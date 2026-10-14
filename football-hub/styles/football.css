@@ -810,8 +810,8 @@ main {
 #subscribeForm button:hover {
     background-color: #1765a8;
 }
-.mafii{width: 100%;}
-.mafii main{width: 100%;}
+html,body{width: 100%;}
+body{overflow-x: hidden;}
 
 @media screen and (max-width: 768px) {
     .habu-f1 nav.navMenu {
