@@ -541,7 +541,7 @@ footer {
     text-align: center;
 }
 
-.team-flex nav {
+.team-flex nav ul{
     display: flex;
     gap: 1.5rem;
     justify-content: center;
@@ -929,7 +929,7 @@ main {
         gap: 9px;
     }
 
-    .hero-sectionn h2 {
+    .hero-sectionn h1 {
         width: 90%;
         font-size: 2rem;
         overflow-wrap: break-word;
@@ -940,7 +940,7 @@ main {
         overflow-wrap: break-word;
     }
 
-    .team-flex nav {
+    .team-flex nav ul{
         gap: 0.8rem;
     }
 
