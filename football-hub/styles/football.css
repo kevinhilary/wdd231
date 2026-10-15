@@ -75,7 +75,7 @@ header {
 .hero-section h1 {
     position: absolute;
     top: 40px;
-    color: #FFFFFF;
+    color: #C00000;
     font-size: 4rem;
     left: 100px;
     font-family: "Poppins", sans-serif;
@@ -84,7 +84,7 @@ header {
 .hero-section p {
     position: absolute;
     top: 250px;
-    color: #FFFF00;
+    color: #C00000;
     left: 100px;
     line-height: 1.5;
     font-size: 1.3rem;
