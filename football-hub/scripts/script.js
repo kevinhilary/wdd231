@@ -11,6 +11,7 @@ menuBtn.addEventListener("click", function () {
     }
 });
 
+
 const displayRandomCards = async () => {
     try {
         const response = await fetch("data/news.json");

@@ -13,7 +13,8 @@
     <meta property="og:title" content="Home Page">
     <meta property="og:description"
         content="This is my course home page for Web Fundamentals showing my projects and assignments.">
-    <meta property="og:image" content="https://kevinhilary.github.io/wdd231/football-hub/images/hero-image-optimized.webp">
+    <meta property="og:image"
+        content="https://kevinhilary.github.io/wdd231/football-hub/images/hero-image-optimized.webp">
     <meta property="og:url" content="https://kevinhilary.github.io/wdd231/football-hub/index.html">
     <!-- Preconnect for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,19 +36,21 @@
         <button id="menuBtn"> &#9776;</button>
         <div class="habu-f1">
             <nav class="navMenu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="view.html">News</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="results.html">Fixtures & Results</a></li>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="view.html">News</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="results.html">Fixtures & Results</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
         <section class="hero-section">
             <img src="images/hero-image-optimized.webp" alt="hero-image" class="hero-image" loading="lazy">
-            <h1>Welcome to <br>Football Hub</h1>
+            <h2>Welcome to <br>Football Hub</h2>
             <p>Your ultimate destination for the latest news,<br>players,fixtures and everything about the game.</p>
-            <button onclick="window.location.href='subscribe.html'">Subscribe Now</button>
+            <a href="subscribe.html">Subscribe Now</a>
             <img src="images/ronaldo-messi-optimized.webp" alt="goats" loading="lazy" class="hero-image2">
         </section>
         <div class="latee">
@@ -105,10 +108,12 @@
         <div class="second-flex">
             <div>
                 <nav class="bottomNav">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="team.html">Players</a></li>
-                    <li><a href="team.html">News</a></li>
-                    <li><a href="results.html">Fixtures & Results</a></li>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="team.html">Players</a></li>
+                        <li><a href="team.html">News</a></li>
+                        <li><a href="results.html">Fixtures & Results</a></li>
+                    </ul>
                 </nav>
             </div>
             <div>
@@ -128,4 +133,5 @@
         </div>
     </footer>
 </body>
+
 </html>
