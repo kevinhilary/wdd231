@@ -24,7 +24,8 @@ header {
     gap: 2rem;
 }
 
-.habu-f h1 {
+.habu-f p {font-size: 1.8rem;
+    font-weight: 700;
     margin-top: 1rem;
     font-family: "Poppins", sans-serif;
 }
@@ -71,7 +72,7 @@ header {
     position: relative;
 }
 
-.hero-section h2 {
+.hero-section h1 {
     position: absolute;
     top: 40px;
     color: white;
@@ -798,6 +799,7 @@ main {
     width: 100%;
     max-width: 100%;
 }
+.apuu{color: white;text-align: center;}
 
 
 
@@ -843,7 +845,7 @@ main {
         margin-top: 1rem;
     }
 
-    .habu-f h1 {
+    .habu-f p {
         font-size: 1.5rem;
     }
 
@@ -851,7 +853,7 @@ main {
         height: 350px;
     }
 
-    .hero-section h2 {
+    .hero-section h1 {
         font-size: 2.5rem;
         left: 50px;
     }
@@ -1002,16 +1004,5 @@ main {
         width: 100%;
         padding: 0.85rem;
     }
-}
-
-@media(orientation: landscape) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    main {
-        width: 100%;
-        max-width: 100%;
-    }
+    .apu{font-size: 1.5rem;}
 }
